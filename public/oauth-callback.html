@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OAuth Callback</title>
+  </head>
+  <body>
+    <script>
+      if (window.opener && window.opener.__esriId) {
+        window.opener.__esriId.setOAuthResponseHash(window.location.hash)
+        window.close()
+      } else {
+        document.body.textContent =
+          'OAuth callback reached, but no opener was found. You can close this window.'
+      }
+    </script>
+  </body>
+</html>
