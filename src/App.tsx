@@ -13,7 +13,7 @@ import OAuthInfo from '@arcgis/core/identity/OAuthInfo'
 import esriId from '@arcgis/core/identity/IdentityManager'
 import './App.css'
 
-const DEFAULT_PORTAL_URL = 'https://www.arcgis.com'
+const DEFAULT_PORTAL_URL = 'https://usfs.maps.arcgis.com'
 const DEFAULT_LAYER_URL =
   'https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/extents/FeatureServer/0'
 
